@@ -1,7 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -y cron && which cron && \
-    rm -rf /etc/cron.*/*
+RUN apt-get update && apt-get install -y cron vim curl
 
 COPY entrypoint.sh /entrypoint.sh
 
